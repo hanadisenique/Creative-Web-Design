@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="style.css">
+    <title>Small Project</title>
+</head>
+<body class="grey lighten-4">
+    <nav class="purple darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="project.html" class="brand-logo">Relevant Blogs</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="index.html" class="dashboard"></a>
+                    </li>
+                    <li>
+                        <a href="#">Posts</a>
+                    </li>
+                    <li>
+                        <a href="#">Comments</a>
+                    </li>
+                    <li>
+                        <a href="#">Users</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+             <div class="background">
+                <img src="../boquet.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="../img1.jpg"></a>
+            <a href="#name"><span class="white-text name">My Blog</span></a>
+            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div>
+    </li>
+    <li>
+        <a href="#!">
+            <i class="material-icons">cloud</i>
+            First Link With Icon
+        </a>
+    </li>
+        <li>
+            <a href="#!">Second Link</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">Subheader</a>
+        </li>
+        <li>
+            <a class="waves-effect" href="#!">Third Link With Waves</a>
+        </li>
+    </ul>
+<!------------------------------------------Section: Stats---------------------------------------->
+<section class="section section-stats center">
+    <div class="row">
+        <div class="col s12 m6 l3">
+            <div class="card-panel purple lighten-2 white-text center">
+            <i class="material-icons medium">extension</i>
+            <h5>Monthly Visitors</h5>
+            <h3 class="count">2800</h3>
+    </div>
+    </div>
+         <div class="col s12 m6 l3">
+            <div class="card-panel purple darken-1 white-text center">
+           <i class="material-icons medium">find_in_page</i> 
+           <h5>Blog Posts</h5>
+           <h3 class="count">300</h3>
+    </div>
+    </div>
+         <div class="col s12 m6 l3">
+            <div class="card-panel purple lighten-2 white-text center">
+            <i class="material-icons medium">folder_open</i> 
+            <h5>Comments</h5>
+            <h3 class="count">1200</h3>  
+    </div> 
+    </div>
+        <div class="col s12 m6 l3">
+            <div class="card-panel purple darken-1 white-text center">
+                <i class="material-icons medium">hourglass_full</i>
+                <h5>Users</h5>
+           <h3 class="count">80</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--------------------------------------Section: Visitors------------------------------------------>
+<section class="section section-visitors purple lighten-4">
+    <div class="row">
+        <div class="col s12 m6 l8"> 
+            <div id="chartContainer" 
+            style="height:300px; width:100%">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------Jquery---------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">    
+    </script>
+<!------------------------------------------CanvaSjs------------------------------------------->
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="js/chart.js"></script>
+<!------------------------------------------SideNav---------------------------------->
+    <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav({
+        edge: 'left',
+        inDuration: 1000,
+        outDuration: 1000
+    });
+  });
+    </script>
+
+</body>
+</html>

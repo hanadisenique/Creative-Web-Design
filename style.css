@@ -1,0 +1,16 @@
+.box {
+    background: rgb(184, 57, 78);
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.toast {
+    background-color: rgb(226, 52, 81);
+}
+
+.loader {
+    position:absolute;
+    top: 40%;
+    left: 47%;
+}
